@@ -10,6 +10,7 @@ export default function Template({
   return (
     <div className="landing-container">
       <div className="landfing-post">
+        landing!!
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
         <div

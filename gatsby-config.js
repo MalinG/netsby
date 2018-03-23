@@ -8,13 +8,13 @@ module.exports = {
             name: "markdown-pages",
           },
         },
-        // {
-        //   resolve: 'gatsby-source-filesystem',
-        //   options: {
-        //     path: `${__dirname}/src/landing`,
-        //     name: 'landing',
-        //   },
-        // },
+        {
+          resolve: 'gatsby-source-filesystem',
+          options: {
+            path: `${__dirname}/landing`,
+            name: 'landing',
+          },
+        },
       `gatsby-transformer-remark`,
     ]
 
