@@ -1,8 +1,9 @@
-import React from "react"
-import Template from '../templates/blogTemplate';
+import React from 'react'
+import graphql from 'graphql'
 
-export default () => {
-    // console.log(Template);
+export default (data) => {
+    console.log(data);
+
 
     return (
         <div>
@@ -10,4 +11,23 @@ export default () => {
         </div>
     )
 }
+
+export const pageQuery = graphql`
+    query MyQueryName {
+        allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+        ) {
+            edges {
+                node {
+                html
+                frontmatter {
+                    path
+                    title
+                }
+                }
+            }
+        }
+    }
+    `;
 

@@ -14,3 +14,11 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - {name: body, label: Blog post content, widget: markdown}
+  - name: landingpage
+    label: Landing page
+    folder: landing
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - {name: body, label: Content, widget: markdown}
