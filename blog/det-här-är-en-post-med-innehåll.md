@@ -1,7 +1,7 @@
 ---
-path: hej
+path: /hej
 date: '2018-03-23'
-title: Det här är en post med innehåll
+title: Det här
 ---
 Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada. Donec rutrum congue leo eget malesuada.
 

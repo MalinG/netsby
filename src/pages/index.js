@@ -1,3 +1,13 @@
 import React from "react"
+import Template from '../templates/blogTemplate';
 
-export default () => <div>Hello world!</div>
+export default () => {
+    // console.log(Template);
+
+    return (
+        <div>
+            <h2>Hello!</h2>
+        </div>
+    )
+}
+
