@@ -2,5 +2,6 @@
 path: /person/Lucy
 name: Lucy
 age: '5'
-image: /assets/img_5193.jpg
+image: /static/images/uploads/img_5193.jpg
 ---
+
