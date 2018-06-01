@@ -13,7 +13,7 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - {name: body, label: Blog post content, widget: markdown}
+      - { name: body, label: Blog post content, widget: markdown}
   - name: landingpage
     label: Landing page
     folder: landing
@@ -22,3 +22,13 @@ collections:
       - { name: path, label: Path }
       - { name: title, label: Title }
       - {name: body, label: Content, widget: markdown}
+  - name: person
+    label: Person
+    folder: person
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: name, label: Name }
+      - { name: age, label: Age }
+      - { name: path, label: Path }
+      - { label: Picture, name: image, widget: image }
