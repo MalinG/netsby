@@ -15,6 +15,13 @@ module.exports = {
             name: 'landing',
           },
         },
+        {
+          resolve: 'gatsby-source-filesystem',
+          options: {
+            path: `${__dirname}/person`,
+            name: 'person',
+          },
+        },
       `gatsby-transformer-remark`,
     ]
 

@@ -3,6 +3,7 @@ backend:
   repo: MalinG/netsby
 
 media_folder: static/assets
+public_folder: static/assets
 
 collections:
   - name: blog

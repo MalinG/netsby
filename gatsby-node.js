@@ -5,6 +5,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`);
   const landingPageTemplate = path.resolve(`src/templates/landingTemplate.js`);
+  const personPageTemplate = path.resolve(`src/templates/personTemplate.js`);
 
   return graphql(`
     {
@@ -29,6 +30,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       if (node.frontmatter.path.match(/^\/page/)) {
         component = landingPageTemplate;
+      } else if (node.frontmatter.path.match(/^\/person/)) {
+        component = personPageTemplate;
       } else {
         component = blogPostTemplate;
       }
