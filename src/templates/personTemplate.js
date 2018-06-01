@@ -6,7 +6,7 @@ export default function Template({
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
 
-  console.log(data)
+  console.log()
 
   return (
     <div className="person-container">

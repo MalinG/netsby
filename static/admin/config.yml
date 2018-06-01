@@ -2,8 +2,7 @@ backend:
   name: github
   repo: MalinG/netsby
 
-media_folder: static/assets
-public_folder: assets
+media_folder: assets
 
 collections:
   - name: blog
